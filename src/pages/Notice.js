@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NoticeHeader from "../components/Notice/NoticeHeader";
 import NoticeCategory from "../components/Notice/NoticeCategory";
+import Searchbar from "../components/Notice/Searchbar";
 import NoticeList from "../components/Notice/NoticeList";
 import axios from "axios";
 import { Paginator } from "primereact/paginator";
@@ -53,6 +54,7 @@ const Notice = () => {
                 onSelectCategory={handleSelectCategory}
                 selectedCategory={selectedCategory}
             />
+            <Searchbar />
             <NoticeList notices={notices} />
             <div style={{ margin: "-10px -10px" }}>
                 <Paginator
