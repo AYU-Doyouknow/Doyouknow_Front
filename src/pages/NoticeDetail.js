@@ -83,10 +83,21 @@ const NoticeDetail = () => {
                     <span className="author">{noticeData.noticeWriter}</span>
                 </div></div>
                 <hr className="body-top" />
-                <div
-                    className="noticeDetail-body"
-                    dangerouslySetInnerHTML={{ __html: updatedBody || "" }}
-                />
+                <div className="noticeDetail-body">
+                    <div dangerouslySetInnerHTML={{ __html: updatedBody || "" }}/>
+                
+                <p className="link-label">&lt;바로가기 링크&gt;</p>
+                <a className="notice-link" >
+                {/*href={noticeData.noticelink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                 >
+                {noticeData.noticelink} 수정필요*/}
+                
+                </a>
+
+                </div>
+
             </div>
         </div>
      
