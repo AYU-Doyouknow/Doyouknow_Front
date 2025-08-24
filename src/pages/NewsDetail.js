@@ -49,19 +49,30 @@ const NewsDetail = () => {
     return (
         <div className="news-detail">
             <Header />
-            <div className="noticeDetail-container">
-                <div className="noticeDetail-title">{newsData.newsTitle}</div>
+            <div className="newsDetail-container">
+                <div className="newsDetail-title">{newsData.newsTitle}</div>
                 <hr className="title-footer" />
-                <div className="notice-footer">
+                <div className="news-footer">
                     <span className="date">{newsData.newsDate}</span>
                     <span className="divider">|</span>
                     <span className="author">{newsData.newsWriter}</span>
                 </div>
                 <hr className="body-top" />
-                <div
-                    className="noticeDetail-body"
-                    dangerouslySetInnerHTML={{ __html: updatedBody || "" }}
-                />
+                <div className="newsDetail-body">
+                    <div dangerouslySetInnerHTML={{ __html: updatedBody || "" }} />
+
+                    <p className="link-label">&lt;바로가기 링크&gt;</p>
+                    <a className="news-link" >
+                    {/*href={newsData.newslink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    {newsData.newslink} 수정필요*/}
+                    
+                    </a>
+
+
+                 </div>
             </div>
         </div>
     );

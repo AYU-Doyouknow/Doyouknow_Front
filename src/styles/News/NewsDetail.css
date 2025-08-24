@@ -37,14 +37,14 @@
 
 } */
 
-.noticeDetail-container {
+.newsDetail-container {
     margin-top: 23px;
     margin-left: 10px;
     margin-right: 10px;
  
 }
 
-.noticeDetail-fixed {
+.newsDetail-fixed {
   position: sticky;
   top: 0;
   background-color: white;
@@ -52,11 +52,12 @@
   padding: 10px 0;
  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);  선택적 */
 }
-.noticeDetail-title {
+
+.newsDetail-title {
     font-size: 18px;
 }
 
-.notice-footer {
+.news-footer {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -74,8 +75,20 @@
     border: none;
 }
 
-.noticeDetail-body{
+.newsDetail-body{
     width: 100%;
     max-width: 900px;
     overflow-x: auto;
+    margin-bottom: 3rem;
+}
+
+.link-label{
+ font-size: 1.3rem;
+ padding: 3rem 0px 0px 0px;
+ color: blue;
+ font-weight: bold;
+}
+
+.news-link{
+    font-size: 2rem;
 }
